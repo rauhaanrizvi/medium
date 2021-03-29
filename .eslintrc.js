@@ -1,14 +1,11 @@
-if (hasESLint)
-{
-  module.exports = {
-    plugins: ['wdio'],
-    extends: 'plugin:wdio/recommended',
-    env: {
-      mocha: true
-    },
-    rules: {
-      strict: 'off'
-    }
-  }
-}
+module.exports = {
+  plugins: ['wdio'],
+  extends: 'plugin:wdio/recommended',
+  env: {
+   mocha: true
+  },
+  rules: {
+     strict: 'off'
+   }
+ }
 
