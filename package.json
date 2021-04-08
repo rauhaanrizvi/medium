@@ -24,6 +24,15 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0"
   },
+  "gitHooks" : {
+    "pre-commit" : "lint-staged"
+  },
+  "lint-staged" : {
+    "*.{js, vue}" : [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
   "eslintConfig": {
     "root": true,
     "env": {
@@ -43,15 +52,4 @@
     "last 2 versions",
     "not dead"
   ]
-}
-{
-  "gitHooks" : {
-    "pre-commit" : "lint-staged"
-  },
-  "lint-staged" : {
-    "*.{js, vue}" : [
-      "vue-cli-service lint",
-      "git add"
-    ]
-  }
 }
